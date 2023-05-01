@@ -1,0 +1,13 @@
+cric={}
+n=int(input('enter no. of players'))
+for i in range(1,n+1):
+    l=[]
+    pno=int(input('enter player number'))
+    pname=input('enter player name')
+    l.append(pno)
+    l.append(pname)
+    cric[pno]=l
+print(cric)
+pno=int(input('enter player number for details'))
+print('pno:',cric[pno][0])
+print('playername:',cric[pno][1])
